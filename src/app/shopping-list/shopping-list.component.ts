@@ -13,7 +13,8 @@ export class ShoppingListComponent {
 
   ] ; 
   
-  constructor(){
-
+  constructor(){}
+  onIngredientAdd(ingredient : Ingredient){
+    this.ingredients.push(ingredient)
   }
 }
