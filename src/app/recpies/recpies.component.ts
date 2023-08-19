@@ -10,4 +10,13 @@ import { RecipeService } from './recpies-list/recipe.service';
 })
 export class RecpiesComponent {
   selectedRecipe !: Recipe;
+
+  constructor(private recipeService : RecipeService){}
+  ngOnInit(){
+    this.recipeService.recipeSelected.subscribe(
+      (recipe : Recipe) => {
+        this.selectedRecipe = recipe ; 
+      }
+    )
+  }
 }
