@@ -8,15 +8,16 @@ import { ShoppingService } from '../shopping.service';
   styleUrls: ['./shopping-edit.component.css']
 })
 export class ShoppingEditComponent implements OnInit {
-  @ViewChild('itemName') nameInputRef !: ElementRef;
-  @ViewChild('itemCount') amountInputRef  !: ElementRef;
+  @ViewChild('itemName') nameInputRef!: ElementRef;
+  @ViewChild('itemNumber') amountInputRef !: ElementRef;
   
   constructor(private slService : ShoppingService) { }
-  
+
   ngOnInit() {
-    
+
   }
   onAddRecipe(){
+    console.log("4")
     const newIngredient = new Ingredient(this.nameInputRef.nativeElement.value , this.amountInputRef.nativeElement.value )
     this.slService.addIngredient(newIngredient)
   }
