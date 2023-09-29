@@ -11,7 +11,7 @@ const appRouts : Routes = [
     {path:'' , component : RecpieStartComponent},
     {path:':id' , component:RecpiesDetailComponent}
   ]},
-  {path : 'shopping-list' , component : ShoppingListComponent} , 
+  {path : 'shopping-list' ,component : ShoppingListComponent} , 
 ]
 
 @NgModule({

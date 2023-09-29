@@ -1,8 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { Recipe } from '../recipe.model';
+<<<<<<< HEAD
 import { RecipeService } from '../recpies-list/recipe.service';
 import { ActivatedRoute } from '@angular/router';
 import { Params } from '@angular/router';
+=======
+>>>>>>> parent of 8af5e38 (Last commit before debug)
 
 @Component({
   selector: 'app-recpies-detail',
@@ -10,6 +13,7 @@ import { Params } from '@angular/router';
   styleUrls: ['./recpies-detail.component.css']
 })
 export class RecpiesDetailComponent {
+<<<<<<< HEAD
  recipe !: Recipe; 
    id !: number ; 
 
@@ -27,4 +31,7 @@ export class RecpiesDetailComponent {
         }
       )
     }
+=======
+  @Input() recipe!: Recipe; 
+>>>>>>> parent of 8af5e38 (Last commit before debug)
 }
