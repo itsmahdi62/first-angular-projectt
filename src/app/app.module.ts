@@ -13,6 +13,7 @@ import {DropdownDirective} from "./shared/dropdown.directive"
 import {ShoppingService} from "./shopping-list/shopping.service"
 import { AppRoutingModule } from './app-routing.module';
 import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
+import { RecpieStartComponent } from './recpies/recpie-start/recpie-start.component';
 
 
 
@@ -28,6 +29,7 @@ import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.compon
     ShoppingEditComponent,
     DropdownDirective,
     RecipeStartComponent,
+    RecpieStartComponent,
   ],
   imports: [
     BrowserModule,
