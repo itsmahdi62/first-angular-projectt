@@ -8,7 +8,8 @@ import {RecipeService} from "../recipe.service"
 })
 export class RecpiesItemComponent {
   @Input() recipe!: Recipe; 
-
+  @Input() index:number |any ;
+  
   constructor(private recipeService : RecipeService){}
 
   onSelected(){
